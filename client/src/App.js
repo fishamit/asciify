@@ -9,8 +9,10 @@ const App = () => {
   const [zoom, setZoom] = useState(0.5);
   const [error, setError] = useState(null);
   const [ascii, setAscii] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const click = async () => {
+    setLoading(true);
     const formData = new FormData();
     formData.append('image', file);
     formData.append('resolution', resolution);
@@ -20,6 +22,7 @@ const App = () => {
       setAscii(res.data.ascii);
       setFile(null);
     } else setError('Server error.');
+    setLoading(false);
   };
 
   const handleChange = e => {
@@ -92,8 +95,8 @@ const App = () => {
           <input
             className="btnAsciify"
             type="button"
-            value="Asciify!"
-            disabled={!file}
+            value={loading ? 'Please wait...' : 'Asciify!'}
+            disabled={!file || loading}
             onClick={click}
             accept="image/png, image/jpeg"
           />
