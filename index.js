@@ -32,6 +32,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.listen(process.env.PORT || 3100, () => {
-  console.log('Listening @' + (process.env.PORT || 3100));
+app.listen(process.env.PORT || 3000, () => {
+  console.log('Listening @' + (process.env.PORT || 3000));
 });
