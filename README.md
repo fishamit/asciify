@@ -3,4 +3,4 @@ Image to ascii converter written in Node.js & React using a slightly altered [im
 
 ![Asciify](asciify.png)
 
-##http://www.asciify.xyz
+http://www.asciify.xyz
