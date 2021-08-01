@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  background-color: #b6d5dd;
+}
+
+html,
+body,
+#root,
+.App {
+  height: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  box-shadow: 0px 0 20px 0 #1283a281;
+  padding: 20px;
+  background-color: #2d6788b0;
+  border-radius: 10px;
+  height: 350px;
+}
+.form {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: 0.6rem;
+}
+
+h3,
+h1 {
+  text-align: center;
+}
+
+.ascii {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.zoom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnAsciify {
+  font-size: 1.2rem;
+}
+
+.controls {
+  /* position: fixed;
+  top: 0;
+  left: 3px; */
+  width: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showAscii {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.cont {
+  overflow: auto;
+  width: 70%;
+  height: 70%;
+  /* border: 1px solid rgba(0, 0, 0, 0.363); */
+  box-shadow: 0px 0 20px 0 #1283a281;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.asciiContainer {
+  margin: auto;
+}

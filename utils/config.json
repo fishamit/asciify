@@ -1,0 +1,8 @@
+{
+  "values": "@%#*+=-:. ",
+  "squareSize": 5,
+  "exportOptions": {
+    "toPng": false,
+    "toTxt": true
+  }
+}
