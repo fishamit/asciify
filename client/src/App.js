@@ -118,13 +118,6 @@ const App = () => {
             >
               Back
             </button>{' '}
-            <button
-              onClick={() => {
-                navigator.clipboard.writeText(ascii);
-              }}
-            >
-              Copy to clipboard
-            </button>
             <div className="zoom">
               <label htmlFor="zoom">Zoom: </label>
               <input
